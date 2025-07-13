@@ -1,0 +1,15 @@
+{
+  "name": "quiz-backend",
+  "version": "1.0.0",
+  "description": "AI Quiz Backend using Node.js and Express",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^5.0.0",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.0",
+    "openai": "^5.0.0"
+  }
+}
