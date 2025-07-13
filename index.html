@@ -3,11 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <title>AI Quiz Generator</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: #f0f4f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    select, button {
+      padding: 10px;
+      font-size: 16px;
+      margin: 10px 0 20px;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    #quizContainer {
+      margin-top: 20px;
+    }
+
+    #resultBox {
+      background: #e8f5e9;
+      border-left: 4px solid #4caf50;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 8px;
+      display: none;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
-    <h1>AI Quiz Generator</h1>
+    <h1>🧠 AI Quiz Generator</h1>
     
     <label for="subject">Choose a subject:</label>
     <select id="subject">
@@ -15,11 +65,15 @@
       <option value="history">History</option>
       <option value="math">Math</option>
       <option value="javascript">JavaScript</option>
+      <option value="space">Space</option>
+      <option value="indian politics">Indian Politics</option>
     </select>
     
-    <button id="generateBtn">Generate Quiz</button>
+    <button id="generateBtn">🎲 Generate Quiz</button>
     
     <div id="quizContainer"></div>
+    
+    <div id="resultBox"></div>
   </div>
 
   <script src="script.js"></script>
